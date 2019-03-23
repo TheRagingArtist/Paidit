@@ -45,31 +45,17 @@
             <hr class="my-4">
             <form>
                 <div class="form-group row">
-                    <label><h2>How many years of college?</h2></label>
-                    <select name="studentyears">
-                 <option selected>Years...</option>
-                 <option value="1">1</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-                 <option value="2">4</option>
-                 <option value="3">5</option>
-                     </select>
+                    <label for="yearsincollege"><h2>How many years in college?</h2></label>
+                    <input type="number" name="yearsincollege">
+                </div>
+                <div class="form-group row"> 
+                    <!-- This is where you will have the 2nd part repeat -->
                 </div>
                 <div class="form-group row">
-                    <label><h2>What year will you graduate?</h2></label>
-                    <input type="date" name="studentgraduationyear">
+                    <label for="payoffpermonth"><h2>How much would you like to pay off per month?</h2></label>
+                    <input type="number" name="payoffpermonth">
                 </div>
-                <div class="form-group row">
-                    <label><h2>What will be your expected income after graduation?</h2></label>
-                    <input type="number" name="studentincome">
-                </div>
-                <div class="form-group row">
-                    <label><h2>Is the loan Direct Unsubsidized or Direct Subsidized?</h2></label>
-                    <select name="duds">
-                        <option selected>...</option>
-                        <option value="directunsubsidized">Direct Unsubsidized</option>
-                        <option value="directsubsidized">Direct Subsidized</option>
-                    </select>
+
                 </div>
              </form>
          </div>

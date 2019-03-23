@@ -11,7 +11,7 @@
 }
 
 .backgroundContainer {
-	background-color: rgba(119,201,300,.5);
+	background-color: rgba(119,201,300,.7);
 }
 
 textarea {
@@ -22,9 +22,16 @@ textarea {
 	font-size: 100px;
 }
 
-li {
+li{
 	padding-left: 5%;
 	padding-right: 5%;
 	font-size: 30px;
+
+}
+a {
+	color: black;
+}
+a:hover {
+	color: white;
 }
 

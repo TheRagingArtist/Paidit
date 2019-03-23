@@ -1,7 +1,7 @@
 {
-  "name": "ubility",
+  "name": "paidit",
   "version": "1.0.0",
-  "description": "Gives you the ability to find accessible establishments",
+  "description": "Allows you to calculate and pay your loans effectively",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katherinemarsh/Ubility.git"
+    "url": "git+https://github.com/TheRagingArtist/Paidit"
   },
-  "author": "Katherine Marsh",
+  "author": "Shannon DeHart",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/katherinemarsh/Ubility/issues"
+    "url": "https://github.com/TheRagingArtist/Paidit/issues"
   },
-  "homepage": "https://github.com/katherinemarsh/Ubility#readme",
+  "homepage": "https://github.com/TheRagingArtist/Paidit#readme",
   "dependencies": {
     "express": "^4.16.4",
     "googleplaces": "^0.6.1",

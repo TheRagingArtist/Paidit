@@ -22,7 +22,7 @@
 
         <!-- This Contains the Nav Bar -->
                 <nav>
-                    <ul class="nav justify-content-center">
+                    <ul class="nav justify-content-center rounded">
                       <li class="nav-item">
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
@@ -41,13 +41,31 @@
     <div class="row">
         <div class="col">
           <div class="jumbotron">
-            <h1 class="display-4">Our Goal!</h1>
+            <h1 class="display-4">Contact Us!</h1>
                         <hr class="my-4">
-              <p class="lead">American Students have a student debt with an average of four loans. We aim to make them easier to understand and to pay off with out the stress that normally accompanies.</p>
-              <a class="btn btn-primary btn-lg" href="loancalculator.html" role="button">Loan Calculator</a>
-          </div>
-      </div>
-  </div>
+            <div class="row">
+                <form action="thankyou.html" method="post">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-3">
+                                <label>Name:</label>
+                                <input type="text" name="name">
+                                <label>Phone:</label>
+                                <input type="tel" name="telephone">
+                                <label>Email:</label>
+                                <input type="email" name="emailaddress">
+                                <div class="form-group">
+                                    <label>How may we help you?</label>
+                                    <textarea maxlength="100" rows="5" cols="100"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div> 
+        </div>
+    </div>
 </div>
 </div>
 

@@ -40,16 +40,41 @@
     <!-- Ending Of The Nav bar -->
     <div class="row">
         <div class="col">
-          <div class="jumbotron">
-            <h1 class="display-4">Our Goal!</h1>
-                        <hr class="my-4">
-              <p class="lead">American Students have a student debt with an average of four loans. We aim to make them easier to understand and to pay off with out the stress that normally accompanies.</p>
-              <a class="btn btn-primary btn-lg" href="loancalculator.html" role="button">Loan Calculator</a>
-          </div>
-      </div>
-  </div>
-</div>
-</div>
+            <div class="jumbotron">
+            <h1 class="display-4">Loan Calculator</h1>
+            <hr class="my-4">
+            <form>
+                <div class="form-group row">
+                    <label><h2>How many years of college?</h2></label>
+                    <select name="studentyears">
+                 <option selected>Years...</option>
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="2">4</option>
+                 <option value="3">5</option>
+                     </select>
+                </div>
+                <div class="form-group row">
+                    <label><h2>What year will you graduate?</h2></label>
+                    <input type="date" name="studentgraduationyear">
+                </div>
+                <div class="form-group row">
+                    <label><h2>What will be your expected income after graduation?</h2></label>
+                    <input type="number" name="studentincome">
+                </div>
+                <div class="form-group row">
+                    <label><h2>Is the loan Direct Unsubsidized or Direct Subsidized?</h2></label>
+                    <select name="duds">
+                        <option selected>...</option>
+                        <option value="directunsubsidized">Direct Unsubsidized</option>
+                        <option value="directsubsidized">Direct Subsidized</option>
+                    </select>
+                </div>
+             </form>
+         </div>
+        </div>
+    </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

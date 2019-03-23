@@ -1,0 +1,30 @@
+@font-family {
+	font-family: 'Oswald', sans-serif;
+}
+
+#homepagebackground {
+	background-image: url(images/graduationbackground.jpg);
+	background-size: cover;
+}
+.toppaddingforpage {
+	padding-top: 10%;
+}
+
+.backgroundContainer {
+	background-color: rgba(119,201,300,.5);
+}
+
+textarea {
+	resize: none;
+}
+
+.logo {
+	font-size: 100px;
+}
+
+li {
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 30px;
+}
+

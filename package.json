@@ -19,7 +19,6 @@
   "homepage": "https://github.com/TheRagingArtist/Paidit#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "googleplaces": "^0.6.1",
     "jquery": "^3.3.1"
   }
 }

@@ -1,131 +1,87 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/logo.css">
-        <link rel="stylesheet" type="text/css" href="css/search.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link rel="icon" type="image/png" href="images/favicon-wheelchair.png" >
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    </head>
-    <title>Ubility</title>
-    <body>
-        <div class="ubility-content-wrapper">
-        
-            <div class="ubility-header">
-                <div class="ubility-logo">
-                    <div class="ubility-logo-content">
-                        <a class="ubility-logo-link" href="index.html">
-                            <div class="ubility-logo-image">
-                                <i class="fas fa-wheelchair"></i>
-                            </div>
-                            <div class="ubility-logo-text">
-                                <h1>Ubility</h1>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="ubility-desc-container">
-                        <div class="ubility-desc-text">
-                            <h2>Gives you the <span style="color: #15E6DD;">ability</span> to find <span style="color: #15E6DD;">accessible</span> establishments</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="ubility-search-review-container">
-                <div class="ubility-search-review-heading">
-                    <h3>Search for a place...</h3>
-                </div>
-                <div id="search-review-bar">
-                    <input type="text" id="search-input">
-                    <!-- <a href="search.html"> -->
-                        <button class="search-review-button">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    <!-- </a> -->
-                </div>      
-            </div>
-            
-            <div class="search-results-grid-item">
+<head>
 
-            </div>
-            <div class="search-results-grid-item"><button class="hidden review-button">See reviews</button></div>
-            
-                            <!-- The Modal -->
-                <div id="modal-item" class="modal">
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                    <span class="close" id="close-top-1" onclick="hide_modal_top(this.id)">×</span>
-                    
-                    </div>
-                </div>
-            
-                <div class = "hidden leave-review">
-                <h2 class="leave-review-heading">Leave a review</h2>
-                <div class="leave-review-container">
-                <form id="leave-review-form">
-                  <div class="form-name-age">
-                    <div class="form-name-block"/>
-                        <label for="name">Name (optional): </label>  
-                        <input class="form-name" type="text" onfocus="this.placeholder =''" name="name" placeholder="ex) grace hopper">
-                    </div>
-                    
-                    <div class="form-age-block">
-                      <label for="age-demo">Age:</label>
-                      <select class="form-age" name="age-demo">
-                        <option disabled selected value> -- select an option -- </option>
-                        <option value="under18">under 18</option>
-                        <option value="18-24">18 - 24</option>
-                        <option value="25-34">25 - 34</option>
-                        <option value="35-44">35 - 44</option>
-                        <option value="45-54">25 - 34</option>
-                        <option value="55-64">55 - 64</option>
-                        <option value="65+">65 and up</option>
-                      </select>
-                    </div>
-                  </div>
-                  
-                  <div class="form-disability-feedback">
-                    <label for="disability">Disability:</label>
-                    <input type="text" class="form-dis" onfocus="this.placeholder =''" name="disability" placeholder="ex) mobility (crutches)">
-                  </div>
-                  <div class="form-access-friendly"> 
-                    <div class="friendly"> 
-                        <div class="mini-heading">Disability Friendly:</div>
-                        <span class="fas fa-grin-beam le react" id="smile"></span>
-                        <span class="fas fa-meh le react" id="meh"></span>
-                        <span class="fas fa-frown le react" id="frown"></span>
-                    </div>
-                     
-                    <div class="form-accessibility-block">
-                      <div class="mini-heading">Accessibility:</div>
-                      <span class="fas fa-blind ab accessibility" id="blind"></span>
-                      <span class="fas fa-deaf ab accessibility" id="deaf"></span>
-                      <span class="fas fa-sign-language ab accessibility" id="sign"></span>
-                      <span class="fas fa-dog ab accessibility" id="dog"></span>
-                      <span class="fas fa-wheelchair ab accessibility" id="wheelchair"></span>
-                      <span class="fas fa-crutch ab accessibility" id="crutch"></span>
-                      <span class="fas fa-lightbulb ab accessibility" id="lightbulb"></span>
-                    </div>
-                  </div>
-                  <div class="form-rating-block">
-                    <div class="rating mini-heading">Rating:</div>
-                    <span class="far fa-star" id="1"></span>
-                    <span class="far fa-star" id="2"></span>
-                    <span class="far fa-star" id="3"></span>
-                    <span class="far fa-star" id="4"></span>
-                    <span class="far fa-star" id="5"></span>
-                  </div>
-                  
-                  <div class="form-review-block">
-                    <label class="mini-heading" for="review">Review:</label>
-                    <textarea class="form-rev" name="review" onfocus="this.placeholder =''" cols="65" rows="4" placeholder="Enter your thoughts..."></textarea>
-                  </div>
-                </form>
-                <button class="submit-button">Submit your review!</button>
-                </div>
-        </div>
-            </div> 
-        <script src="js/script.js"></script>
-    </body>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title>Webplate</title>
+   <link rel="icon" type="image/png" href="project/img/welcome/favicon.png" />
+   <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+	<div id="webplate-content" style="display:none;">
+	   <!-- Title bar -->
+		<section class="title-bar">
+			<ul>
+				<li class="small-hide"><a href="#starting-guide" class="border-pink scroll-to">Getting Started</a></li>
+				<li class="small-hide"><a href="http://getwebplate.com/#/documentation/what-you-got/"target="_blank">Documentation</a></li>
+				<li class="small-show"><a href="http://getwebplate.com/#/documentation/what-you-got/"target="_blank">Docs</a></li>
+				<li><a href="https://twitter.com/webplatetweets" class="icon-twitter" target="_blank"></a></li>
+			</ul>
+			<a href="http://getwebplate.com" target="_blank" class="logo">
+				<span>Webplate</span>
+				<i class="icon-nfc"></i>
+			</a>
+		</section>
+
+		<!-- Banner -->
+		<section class="banner _title-bar-padding _fuse"><div class="limit">
+	      <h1>Make Something Awesome</h1>
+	      <p>We are so happy that you have decided to use Webplate. It is really easy to get started and has a ton of cool features so below are a few basic tips to get you going. Happy building!</p>
+	      <a class="btn-banner small-hide" href="https://github.com/chrishumboldt/Webplate" target="_blank">Fork Repo</a>
+	      <a class="btn-banner btn-bower" href="http://getwebplate.com/#/documentation/what-you-got/" target="_blank">Read Docs</a>
+		</div></section>
+
+		<!-- Starting guide -->
+		<div id="starting-guide" class="grey-strip">Getting Started</div>
+		<section class="content limit">
+		<h4>Include Webplate</h4>
+		<p>Simply drop the Webplate directory into your web project and include the <b>start.js</b> file before your ending body tag. Below is an example of this and note that an id of <b>webplate</b> is required.</p>
+<pre class="prettyprint linenums">
+&lt;body style=&quot;display:none;&quot;&gt;
+    /* Your content goes here */
+    &lt;script id=&quot;webplate&quot; src=&quot;webplate/start.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+</pre>
+		<p class="note">The body tag style attribute is used to prevent CSS style snapping on load and is highly recommended.</p>
+		<br><br>
+		<h4>Load Your Project Files</h4>
+		<p>All web projects include a combination of CSS and Javascript and Webplate makes it incredibly easy to load these using a simple configuration file. You can find this file at <b>webplate/project/config.json</b>. Below is an example of what you might typically see.</p>
+<pre class="prettyprint linenums">
+{
+    "project": {
+        "css": ["welcome.css", "theme.css"],
+        "js": ["min/welcome.min.js"],
+    }
+}
+</pre>
+			<p class="note">You will notice that a comma delimited list allows you to load more than one file and that the Webplate path is not required. This is because Webplate automatically knows where to look inside the project directory. You can also load different files on different pages. <a href="http://getwebplate.com/#/documentation/configuration/" target="_blank">Want to know more?</a></p>
+			<br><br>
+			<h4>Lets Go To The Next Level</h4>
+			<p>Before you have even started, Webplate has already loaded up <a href="http://modernizr.com/" target="_blank">Modernizr</a>, <a href="http://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a>,  <a href="http://typeplate.com/" target="_blank">Typeplate</a>, <a href="http://julian.com/research/velocity/" target="_blank">Velocity.js</a> and icon font support at a minimal size. This takes away most of the set up time and acts like a kind of advanced boilerplate.</p>
+			<p>This will get you up and running for most projects but if you want to include Webplate components like <a href="http://getwebplate.com/#/documentation/buttons/" target="_blank">Buttons</a>, <a href="http://getwebplate.com/#/documentation/forms/" target="_blank">Forms</a> or <a href="http://getwebplate.com/#/documentation/modals/" target="_blank">Modals</a> or perhaps you want to even start delving into Webplate's automatic <b>Bower, SASS</b> and <b>Grunt</b> intergration then just read over some of the online documentation and become a bonafide pro.</p>
+			<p><b>Browser Support:</b> IE9+, Chrome, Firefox, Safari, Opera</p>
+		</section>
+
+		<!-- Footer -->
+		<footer><div class="content limit"><div class="col-double">
+			<div class="left">
+				Made by <a href="http://chrishumboldt.com" target="_blank">Chris Humboldt</a>
+			</div>
+			<div class="right">
+				<a href="http://getwebplate.com/#/documentation/what-you-got/" target="_blank">Docs</a>&nbsp;&nbsp;
+				<a href="http://getwebplate.com/#/legal/" target="_blank">Legal Stuff</a>&nbsp;&nbsp;
+				Want updates? <a href="http://twitter.com/webplatetweets" target="_blank">@webplatetweets</a>
+			</div>
+		</div></div></footer>
+
+	</div>
+
+   <!-- Webplate -->
+   <script id="webplate" src="start.js"></script>
+
+</body>
 </html>

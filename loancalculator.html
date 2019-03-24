@@ -40,43 +40,44 @@
         </ul>
     </nav>
     <!-- Ending Of The Nav bar -->
-    <div class="row">
-        <div class="col">
+    <div class="col">
             <div class="jumbotron">
-                <h1 class="display-4">Loan Calculator</h1>
-                <hr class="my-4">
-                <form>
-                    <div class="form-group row">
-                        <label for="yearsincollege"><h2>How many years in college?</h2></label>
-                        <input type="number" name="yearsincollege" id="yearsincollege">
+            <h1 class="display-4">Loan Calculator</h1>
+            <hr class="my-4">
+            <form>
+                <div class="form-group row">
+                    <label for="yearsincollege"><h2>How many years in college?</h2></label>
+                    <input type="number" name="yearsincollege">
+
+                </div>
+                <div class="form-group row"> 
+                    <!-- This is where you will have the 2nd part repeat -->
+                    <label for="suborunsub"><h2>Is the loan, Subsudized or Unsubsuzdized?</h2></label>
+                     <input type="checkbox" name="suborunsub"> Subsudized
+                     <input type="checkbox" name="suborunsub"> Unsubsudized
+                </div>
+                    <div class="form-group row"> 
+                        <!-- This is where you will have the 2nd part repeat -->
+                        <label for="lcostt"><h4>How much is the loan?</h4></label>
+                        <input type="number" name = "lcost">
                     </div>
                     <div class="form-group row"> 
-                        <label><h2>What type of loan is it?</h2></label>
-                        <select id="suborunsub">
-                            <option id="..."></option>
-                            <option id="unsubsidized">Unsubsidized</option>
-                            <option id="subsidized">Subsidized</option>
-                        </select>
-
+                        <!-- This is where you will have the 2nd part repeat -->
+                        <label for="lintrest"><h4>How much is the loan intrest?</h4></label>
+                        <input type="number" name = "lintrest">
                     </div>
-                    <div class="form-group row">
-                        <label for="payoffpermonth"><h2>How much is the loan?</h2></label>
-                        <input type="number" name="loanamount" id="loanamount">
-                    </div>  
-                    <div class="form-group row">
-                        <label for="payoffpermonth"><h2>How much is the loan interest?</h2></label>
-                        <input type="number" name="loaninterest" id="loaninterest">
-                    </div>
-                    <button type="button" class="btn btn-primary">Add Loan</button>
-                    <div class="form-group row">
-                        <label for="payoffpermonth"><h2>How much would you like to pay off per month?</h2></label>
-                        <input type="number" name="payoffpermonth" id="payoffpermonth">
-                    </div>  
-                    <button type="button" class="btn btn-primary">Submit</button> 
+                         <button type="button">Add Loan</button> 
+                    
+                <div class="form-group row">
+                    <label for="payoffpermonth"><h2>How much would you like to pay off per month?</h2></label>
+                    <input type="number" name="payoffpermonth"><br>
                 </div>
-            </form>
-        </div>
-    </div>
+                <div class="form-group row">
+                    <input type="submit" value="Submit">
+                </div>
+                </div>
+             </form>
+         </div>
 </div>
 
 <script language="JavaScript">
